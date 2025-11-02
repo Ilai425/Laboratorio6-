@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .halo-title {
+            color: #90EE90;
+            font-weight: bold;
+        }
+
+        .halo-bg {
+            background-color: #2c3e50;
+        }
+
+        .favorite-box {
+            border: 2px solid #113e11;
+            padding: 30px;
+            background-color: rgba(144, 238, 144, 0.1);
+            border-radius: 10px;
+        }
+
+        .accordion-button {
+            color: #90EE90 !important;
+            background-color: #34495e !important;
+        }
+
+        .accordion-body {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+
+<body class="halo-bg text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Laboratorio 6</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Página 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pagina3.html">Página 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 halo-title">Última información relevante de la saga</h1>
+
+        <div class="favorite-box text-center mb-5">
+            <h2 class="halo-title">HALO: Campaign Evolved</h2>
+
+            <img src="Imgenes/Halo Campaign Evolved.jpg" class="img-fluid rounded shadow my-3"
+                alt="Halo: Campaign Evolved">
+
+            <p class="mt-4">
+                Desde la salida de Halo infinity, no sabiamos nada nuevo sobre la saga, pero recientemente se ha
+                anunciado el remake de Halo: Combat Evolved,
+                titulado "Halo: Campaign Evolved". Este remake promete traer gráficos mejorados, jugabilidad actualizada
+                y nuevas características que harán
+                que tanto los fanáticos de la saga como los nuevos jugadores puedan disfrutar de la experiencia clásica
+                de Halo con una perspectiva fresca.
+            </p>
+        </div>
+
+        <h2 class="halo-title mt-5 mb-3">Novedades extra</h2>
+        <div class="accordion" id="accordionNews">
+            <div class="accordion-item border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Reestructuración y nuevo estudio
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionNews">
+                    <div class="accordion-body">
+                        Adiós a 343 Industries, bienvenido Halo Studios: Se ha reportado un cambio significativo en la
+                        estructura interna de Microsoft,
+                        donde el equipo antes conocido como 343 Industries ha sido reestructurado y ahora opera bajo la
+                        denominación de Halo Studios.
+                        <div class="col-md-4 mb-3">
+                            <img src="Imgenes/Halo Studios.jpg" class="img-fluid rounded shadow"
+                                alt="Noticia 1: Cambio de estudio y reestructuración.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        El futuro de los juegos principales: Remakes
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionNews">
+                    <div class="accordion-body">
+                        Tras el anuncio del remake del primero, han surgido rumores que apuntan a que las campañas de
+                        Halo 2 y Halo 3 también recibirán
+                        remakes completos, siguiendo la línea de "renovación" de la saga.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-secondary">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        El estado de Halo Infinite
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionNews">
+                    <div class="accordion-body">
+                        A pesar de la transición a Unreal Engine 5 para futuros juegos, Halo Infinite seguirá recibiendo
+                        soporte de contenido por un tiempo,
+                        con nuevas Operaciones y la continuidad de la Halo Championship Series (HCS).
+                        <div class="col-md-4 mb-3">
+                            <img src="Imgenes/Halo Infinity.jpg" class="img-fluid rounded shadow"
+                                alt="Halo Infinite seguirá recibiendo soporte.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mb-5"></div>
+
+    <div class="container mt-4">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
